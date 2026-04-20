@@ -1,5 +1,8 @@
 # home-lab-project
 
+## Project Objective
+To build a basic Ubuntu-based home lab environment using VirtualBox, document the installation process, and practice system setup, troubleshooting, and Linux command-line verification.
+
 ## Ubuntu Virtual Machine Setup
 
 ### 1. Download Ubuntu ISO
