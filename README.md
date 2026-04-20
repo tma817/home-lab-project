@@ -34,6 +34,7 @@
 - Opened terminal and verified basic commands:
     - `pwd`
     - `ls`
+  ![Basic Terminal Commands Verification](screenshots/terminal-pwd-ls-verification.png)
 
 ### 6. Known Issues / Observations
 
