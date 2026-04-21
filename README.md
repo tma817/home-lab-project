@@ -56,3 +56,46 @@ To build a basic Ubuntu-based home lab environment using VirtualBox, document th
 - Increased VM memory allocation to 4 GB, which resolved installation stability issues
 - Restarted VM and avoided resizing the VirtualBox window during installation
 - Ubuntu installation completed successfully in approximately 30 minutes
+
+## Ubuntu Virtual Machine Server Setup
+
+### Overview
+- Created a second virtual machine (`lab-ubuntu-server-01`) using Ubuntu Server LTS
+- Purpose: act as a server for networking, SSH, and file transfer within the home lab
+
+### Configuration
+- Memory: 2048 MB (2 GB)
+- CPU: 2 core
+- Storage: 20–25 GB (VDI, dynamically allocated)
+
+### Installation Notes
+- Installation process follows a similar workflow to the Ubuntu Desktop setup documented above
+- Used default installation settings with a minimal server configuration (CLI-only environment, no GUI)
+- Selected "Skip unattended installation" to manually configure hostname, user account, and system settings
+- Installed OpenSSH Server during setup
+- Skipped installation of additional packages
+- Rebooted the VM after installation
+- Noted that the message `"Failed unmounting /cdrom."` can be safely ignored by pressing ENTER
+- Logged into the Ubuntu Server system
+
+---
+
+
+### SSH Configuration (Port Forwarding)
+
+#### Port Forwarding Setup (VirtualBox)
+![Port Forwarding Setting](screenshots/port-forwarding-setting.png)
+- Opened VirtualBox and accessed server VM settings
+- Navigated to: Network → Adapter 1 (NAT) → Advanced → Port Forwarding
+- Added a new rule:
+    - Host Port: 22
+    - Guest Port: 22
+- Applied settings and started the VM
+- Allowed Windows network access when prompted
+
+#### SSH Connection (from Windows Host)
+![SSH Connection from Windows Host](screenshots/ssh-connection-from-Windows-host.png)
+- Opened terminal on Windows
+- Connected using:
+  ```bash
+  ssh truong@localhost
