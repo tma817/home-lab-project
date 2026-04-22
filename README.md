@@ -1,7 +1,7 @@
 # home-lab-project
 
 ## Project Objective
-To build a basic Ubuntu-based home lab environment using VirtualBox, document the installation process, and practice system setup, troubleshooting, and Linux command-line verification.
+To build and expand a Ubuntu-based home lab environment using VirtualBox, including server and client virtual machines. The project focuses on system administration skills such as Linux configuration, networking, web server deployment (LEMP stack with WordPress), SSH access, troubleshooting, and command-line verification.
 
 ## Ubuntu Virtual Machine Setup
 
