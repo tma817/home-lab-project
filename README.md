@@ -99,3 +99,9 @@ To build a basic Ubuntu-based home lab environment using VirtualBox, document th
   ssh truong@localhost
 ![SSH Connection from Windows Host](screenshots/ssh-connection-from-Windows-host.png)
 
+## WordPress Deployment (LEMP Stack Service)
+- Deployed a local WordPress instance on Ubuntu Server VM
+- Installed and configured Nginx, MariaDB, and PHP-FPM
+- Configured database and user permissions
+- Verified successful installation via browser interface
+![word-press-dashboard](/screenshots/wordpress-dashboard.png)
