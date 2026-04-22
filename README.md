@@ -44,8 +44,7 @@ To build a basic Ubuntu-based home lab environment using VirtualBox, document th
 #### Issue 1: Installation freeze / system halt
 - Installation instability observed with 2 GB RAM allocation, resulting in freezing during setup
 - "zstd-compressed data is corrupted, -- system halted" error occurred when resizing the VirtualBox window during installation  
-
-  ![ZSTD Error Screenshot](screenshots/zstd-error.png)
+![ZSTD Error Screenshot](screenshots/zstd-error.png)
 
 #### Issue 2: System program notification
 - A "System program problem detected" notification appeared during initial setup
@@ -84,7 +83,6 @@ To build a basic Ubuntu-based home lab environment using VirtualBox, document th
 ### SSH Configuration (Port Forwarding)
 
 #### Port Forwarding Setup (VirtualBox)
-![Port Forwarding Setting](screenshots/port-forwarding-setting.png)
 - Opened VirtualBox and accessed server VM settings
 - Navigated to: Network → Adapter 1 (NAT) → Advanced → Port Forwarding
 - Added a new rule:
@@ -92,10 +90,12 @@ To build a basic Ubuntu-based home lab environment using VirtualBox, document th
     - Guest Port: 22
 - Applied settings and started the VM
 - Allowed Windows network access when prompted
+![Port Forwarding Setting](screenshots/port-forwarding-setting.png)
 
 #### SSH Connection (from Windows Host)
-![SSH Connection from Windows Host](screenshots/ssh-connection-from-Windows-host.png)
 - Opened terminal on Windows
 - Connected using:
   ```bash
   ssh truong@localhost
+![SSH Connection from Windows Host](screenshots/ssh-connection-from-Windows-host.png)
+
