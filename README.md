@@ -1,13 +1,12 @@
-# home-lab-project
+# Ubuntu Home Lab Project
 
 ## Project Objective
-To build and expand a Ubuntu-based home lab environment using VirtualBox, including server and client virtual machines. The project focuses on system administration skills such as Linux configuration, networking, web server deployment (LEMP stack with WordPress), SSH access, troubleshooting, and command-line verification.
+This project demonstrates my ability to set up and manage a virtualized Linux environment while documenting processes clearly for reproducibility, troubleshooting, and system configuration. The lab includes both client and server virtual machines and focuses on system administration, networking, and web server deployment.
 
-## Ubuntu Virtual Machine Setup
+## Ubuntu Client Setup
 
 ### 1. Download Ubuntu ISO
-- Navigated to the official Ubuntu website
-- Downloaded the Ubuntu Desktop LTS ISO image
+- Downloaded the Ubuntu Desktop LTS ISO image from the official Ubuntu website
 
 ### 2. Create Virtual Machine (VM)
 - Opened Oracle VM VirtualBox
@@ -24,7 +23,7 @@ To build and expand a Ubuntu-based home lab environment using VirtualBox, includ
 
 ### 4. Install Ubuntu
 - Started the VM and selected "Try or Install Ubuntu"
-- Updated the Ubuntu installer during setup to apply latest improvements and stability fixes
+- Updated the Ubuntu installer during setup to apply the latest improvements and stability fixes
 - Relaunched the installer and continued the installation process
 - Used default installation settings
 - Enabled third-party drivers for hardware compatibility (graphics and Wi-Fi)
@@ -56,7 +55,7 @@ To build and expand a Ubuntu-based home lab environment using VirtualBox, includ
 - Restarted VM and avoided resizing the VirtualBox window during installation
 - Ubuntu installation completed successfully in approximately 30 minutes
 
-## Ubuntu Virtual Machine Server Setup
+## Ubuntu Server Setup
 
 ### Overview
 - Created a second virtual machine (`lab-ubuntu-server-01`) using Ubuntu Server LTS
@@ -64,7 +63,7 @@ To build and expand a Ubuntu-based home lab environment using VirtualBox, includ
 
 ### Configuration
 - Memory: 2048 MB (2 GB)
-- CPU: 2 core
+- CPU: 2 cores
 - Storage: 20–25 GB (VDI, dynamically allocated)
 
 ### Installation Notes
@@ -97,11 +96,25 @@ To build and expand a Ubuntu-based home lab environment using VirtualBox, includ
 - Connected using:
   ```bash
   ssh truong@localhost
+  ```
 ![SSH Connection from Windows Host](screenshots/ssh-connection-from-Windows-host.png)
 
 ## WordPress Deployment (LEMP Stack Service)
 - Deployed a local WordPress instance on Ubuntu Server VM
 - Installed and configured Nginx, MariaDB, and PHP-FPM
 - Configured database and user permissions
-- Verified successful installation via browser interface
+- Verified successful deployment through browser interface
 ![word-press-dashboard](/screenshots/wordpress-dashboard.png)
+
+## Skills Demonstrated
+- Linux configuration
+- Virtualization (VirtualBox)
+- SSH and networking
+- Troubleshooting and debugging
+- Technical documentation
+
+## Results
+- Successfully deployed Ubuntu client and server VMs
+- Established SSH connectivity
+- Deployed a working WordPress site using LEMP stack
+- Demonstrated ability to document technical processes clearly for reproducibility and clarity
